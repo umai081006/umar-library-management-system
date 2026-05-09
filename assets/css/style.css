@@ -1,0 +1,42 @@
+/* assets/css/style.css */
+/* Kustom CSS tambahan di luar Tailwind */
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Membatasi teks ke 2 baris (line-clamp) */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Animasi fade-in untuk card */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.bg-white.rounded-xl {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Tabel rapi */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.75rem 1rem;
+}
+
+/* Scrollbar halus */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #64748b; }

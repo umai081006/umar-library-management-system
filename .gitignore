@@ -1,0 +1,28 @@
+# ===========================
+# File sensitif — JANGAN di-commit
+# ===========================
+
+# Konfigurasi database (berisi password)
+config/database.php
+
+# Upload file dari user
+uploads/covers/*
+!uploads/covers/.gitkeep
+
+# File sistem OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log PHP
+*.log
+
+# Dependency (jika ada)
+vendor/
+node_modules/
